@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+    background-color: powderblue;
+    overflow: auto;
+}
+
+#whole-content {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #4aaaa5;
+    width: 960px;
+    background-image: url("../images/wall4.png");
+}
+
+
+/*Header styling below*/
+
+#main-header {
+    background-color: #ffffff;
+    border-bottom: 10px solid #dddddd;
+    text-align: center;
+    float: left;
+    width: 960px;
+    height: 60px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#name {
+    float: left;
+    font-size: 36px;
+    width: 290px;
+    height: 50px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px;
+    margin-left: 74px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav {
+    position: relative;
+    float: left;
+    color: #777777;
+    width: 480px;
+    font-size: 16px;
+    margin-left: 116px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+#about, #portfolio {
+    border-right: 1px solid #dddddd;
+    margin-left: 4px;
+}
+
+#about, #portfolio, #contact {
+    display: inline-block;
+    padding: 8px;
+}
+
+
+/*Header styling above*/
+
+
+/*Main content styling below*/
+
+#body-content {
+    position: relative;
+    height: 870px;
+}
+
+#main-content {
+    z-index: 1;
+    position: relative;
+    background-color: #ffffff;
+    color: #777777;
+    clear: both;
+    padding: 20px;
+    margin-left: 74px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 430px;
+    float: left;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#aboutMe {
+    color: #4aaaa5;
+    line-height: 50px;
+    border-bottom: 4px solid #dddddd;
+}
+
+#bio-image {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 20px;
+}
+
+
+/*Main content styling above*/
+
+
+/*Contact info styling below*/
+
+#connect {
+    background-color: #ffffff;
+    color: #4aaaa5;
+    padding: 14px;
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+    width: 270px;
+    position: absolute;
+    bottom: 45%;
+    left: 110%;
+    z-index: 1;
+}
+
+h2 {
+    border-bottom: 2px solid #dddddd;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icons {
+    width: 50px;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/*Contact info styling above*/
+
+
+/*Footer styling below*/
+
+footer {
+    clear: both;
+    color: darkgrey;
+    background-color: #666666;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 30px;
+    border-top: 10px solid #4aaaa5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Sticky footer*/
+    position: absolute;
+    bottom: 0;
+    width: 960px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/*Footer styling above*/
+
+
+/*input form styling*/
+
+#contact-name {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20px;
+}
+
+#email {
+    margin-bottom: 20px;
+    width: 20px;
+}
+
+#text-box {
+    margin-bottom: 20px;
+}
+
+textarea {
+    margin-top: 20px;
+    width: 380px;
+}
+
+button {
+    background-color: #4aaaa5;
+    padding: 6px;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+input {
+    margin-top: 10px;
+}
+
+
+/*input form styling*/
+
+
+/*portfolio page styling*/
+
+#portfolio-header {
+    color: #4aaaa5;
+    border-bottom: 4px solid #dddddd;
+    line-height: 50px;
+}
+
+#port-img-container {
+    position: relative;
+    right: 8px;
+}
+
+.portfolio-img-1, .portfolio-img-2, .portfolio-img-3, .portfolio-img-4, .portfolio-img-5 {
+    width: 180px;
+    display: inline-block;
+    padding: 16px;
+    float: left;
+    position: relative;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.port-title-1, .port-title-2, .port-title-3, .port-title-4, .port-title-5 {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 15px;
+    width: 180px;
+    height: 6px;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 102px;
+    left: 16px;
+}
+
+@media only screen and (max-width: 980px) {
+  #nav {
+      position: absolute;
+      bottom: 970px;
+      left: -140px;
+  }
+  #aboutMe, #main-header, #body-content, #whole-content {
+      width: 100%;
+  }
+  #main-content {
+      width: 80%;
+      height: 80%;
+  }
+  #connect {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 80%;
+  }
+  #port-img-container {
+      width: 100%;
+  }
+  img {
+      width: 120%;
+  }
+  .port-title-1, .port-title-2, .port-title-3, .port-title-4, .port-title-5 {
+      width: 99%;
+      top: 60%;
+  }
+
+  #text-box {
+    width: 50%;
+  }
+
+  button {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+  }
+
+  footer {
+      width: 100%;
+      position: relative;
+  }
+}
+
+@media only screen and (max-width: 771px) {
+  #nav {
+      position: absolute;
+      bottom: 970px;
+      left: -140px;
+  }
+  #aboutMe, #main-header, #body-content, #whole-content {
+      width: 100%;
+  }
+  #main-content {
+      width: 80%;
+      height: 80%;
+  }
+  #connect {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 80%;
+  }
+  #port-img-container {
+      width: 100%;
+  }
+  img {
+      width: 80%;
+  }
+  .port-title-1, .port-title-2, .port-title-3, .port-title-4, .port-title-5 {
+      width: 65%;
+      top: 50%;
+  }
+
+  #text-box {
+    width: 50%;
+  }
+
+  button {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+  }
+
+  footer {
+      width: 100%;
+      position: relative;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+    #nav {
+        position: absolute;
+        bottom: 970px;
+        left: -140px;
+    }
+    #aboutMe, #main-header, #body-content, #whole-content {
+        width: 100%;
+    }
+    #main-content {
+        width: 80%;
+        height: 80%;
+    }
+    #connect {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80%;
+    }
+    #port-img-container {
+        width: 100%;
+    }
+    img {
+        width: 80%;
+    }
+    .port-title-1, .port-title-2, .port-title-3, .port-title-4, .port-title-5 {
+        width: 65%;
+        top: 50%;
+    }
+
+    #text-box {
+      width: 50%;
+    }
+
+    button {
+      position: relative;
+      z-index: 2;
+      width: 50%;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+    }
+}
